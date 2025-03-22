@@ -63,7 +63,7 @@ int main()
         }
         else {
             std::cout << "Target found at index: " << middle << std::endl;
-            std::cout << "It took: " << Attempts << " Amount of times to find\n"; 
+            std::cout << "It took: " << Attempts << " Attempts to find\n"; 
             break;
         }
         
