@@ -18,5 +18,17 @@
 
 int main()
 {
+    std::vector<int> Numbers[100] = {}; // Declaring vector number set of 100 indexes
+    int target = 90; // Target we want to find
+
+    for (int i = 0; i < std::size(Numbers); i++)
+    {
+        Numbers[i].push_back(i);
+    } // Just setting the values of 0-100 in Numbers
+
+    // THIS IS THE BINARY SEARCH 
+
+    
+
 
 }
