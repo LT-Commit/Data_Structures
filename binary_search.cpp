@@ -18,17 +18,26 @@
 
 int main()
 {
-    std::vector<int> Numbers[100] = {}; // Declaring vector number set of 100 indexes
+    int cap;
     int target = 90; // Target we want to find
 
-    for (int i = 0; i < std::size(Numbers); i++)
+    std::cout << "Whats the amount of numbers you want to check?" << std::endl;
+    std::cin >> cap;
+    std::cout << "Whats the target Num?" << std::endl;
+    std::cin >> target;
+
+
+    std::vector<std::vector<int>> Numbers(cap); // Declaring vector number set of 100 indexes
+    
+
+    for (int i = 0; i < cap; i++)
     {
         Numbers[i].push_back(i);
     } // Just setting the values of 0-100 in Numbers
     
     // THIS IS THE BINARY SEARCH 
     int lower = 0;
-    int top = std::size(Numbers) -1;
+    int top = cap -1;
 
     while(lower <= top)
     {
@@ -39,7 +48,7 @@ int main()
         if(value < target) lower = middle + 1; //adjusts the search range of the check same as below
         else if(value > target) top = middle -1;
         else {
-            std::cout << "Target found at index" << middle << std::endl;
+            std::cout << "Target found at index: " << middle << std::endl;
             break;
         }
         
