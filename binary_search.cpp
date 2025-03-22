@@ -32,7 +32,7 @@ int main()
 
     while(lower <= top)
     {
-        int middle = std::size(lower + top) /2;
+        int middle = (lower + top) /2;
         int value = Numbers[middle].at(0);
         std::cout << "Middle is currently: " << value << std::endl;
 
