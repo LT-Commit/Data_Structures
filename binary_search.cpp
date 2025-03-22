@@ -36,7 +36,7 @@ int main()
         int value = Numbers[middle].at(0);
         std::cout << "Middle is currently: " << value << std::endl;
 
-        if(value < target) lower = middle + 1;
+        if(value < target) lower = middle + 1; //adjusts the search range of the check same as below
         else if(value > target) top = middle -1;
         else {
             std::cout << "Target found at index" << middle << std::endl;
