@@ -26,9 +26,23 @@ int main()
         Numbers[i].push_back(i);
     } // Just setting the values of 0-100 in Numbers
 
-    // THIS IS THE BINARY SEARCH 
-
+    std::cout << std::size(Numbers[2]);
     
+    // THIS IS THE BINARY SEARCH 
+    int lower = 0;
+    int top = std::size(Numbers) -1;
+
+    while(lower <= top)
+    {
+        int middle = std::size(Numbers) /2;
+        int value = Numbers[middle];
+        std::cout << "Middle is currently: " << value << std::endl;
+        
+        
+    }
+    std::cout << "Target found at index";
+
+
 
 
 }
