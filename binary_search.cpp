@@ -37,7 +37,7 @@ int main()
     for (int i = 0; i < cap; i++)
     {
         Numbers[i].push_back(i);
-    } // Just setting the values of 0-100 in Numbers
+    } // Just setting the values of 0-cap in Numbers
     
     // THIS IS THE BINARY SEARCH 
     int lower = 0;
