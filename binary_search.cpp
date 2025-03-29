@@ -23,13 +23,10 @@ int main()
 {
     int cap;
     int target = 90; // Target we want to find
-
     std::cout << "Whats the amount of numbers you want to check?" << std::endl;
     std::cin >> cap;
     std::cout << "Whats the target Num?" << std::endl;
     std::cin >> target;
-
-
      // Start measuring time
      auto start = std::chrono::high_resolution_clock::now();
 
@@ -43,10 +40,9 @@ int main()
     int lower = 0;
     int top = cap -1;
     int Attempts = 0;
-
+    
     while(lower <= top)
     {
-        
         int middle = (lower + top) /2;
         int value = Numbers[middle].at(0);
         std::cout << "Middle is currently: " << value << std::endl;
@@ -66,21 +62,11 @@ int main()
             std::cout << "It took: " << Attempts << " Attempts to find\n"; 
             break;
         }
-        
-        
     }
-
     // End measuring time
     auto end = std::chrono::high_resolution_clock::now();
-
     // Calculate the duration
     std::chrono::duration<double> duration = end - start;
-
     // Output the runtime in seconds
     std::cout << "Program runtime: " << duration.count() << " seconds." << std::endl;
-    
-
-
-
-
 }
